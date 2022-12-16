@@ -1,0 +1,22 @@
+package Looping;
+
+class Loop {
+
+	public static void main(String[] args) {
+		 
+		Loop obj = new Loop();
+		obj.Print(20);
+	}
+
+	 void Print(int amt) {
+		 int purse = 0; 
+		 int day = 1; 
+		 while(day<=amt)
+		 {
+		 purse = purse + 5; 
+		 day = day+1; 
+		 }
+		 System.out.println(purse); 
+	}
+	
+}

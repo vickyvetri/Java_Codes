@@ -1,0 +1,15 @@
+package Looping;
+
+class Loop {
+
+	public static void main(String[] args) {
+		 
+		Loop obj = new Loop();
+		obj.Print(10);
+	}
+
+	 void Print(int i) {
+		 
+	}
+	
+}

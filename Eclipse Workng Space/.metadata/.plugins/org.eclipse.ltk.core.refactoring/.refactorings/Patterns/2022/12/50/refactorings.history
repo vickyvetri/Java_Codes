@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Patterns.My_Brother_Name&apos; to &apos;Alpha_Patterns&apos;&#x0A;- Original project: &apos;Patterns&apos;&#x0A;- Original element: &apos;Patterns.My_Brother_Name&apos;&#x0A;- Renamed element: &apos;Patterns.Alpha_Patterns&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;My_Brother_Name&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Patterns{My_Brother_Name.java[My_Brother_Name" matchStrategy="1" name="Alpha_Patterns" qualified="false" references="true" similarDeclarations="false" stamp="1670592633911" textual="false" version="1.0"/>
+</session>

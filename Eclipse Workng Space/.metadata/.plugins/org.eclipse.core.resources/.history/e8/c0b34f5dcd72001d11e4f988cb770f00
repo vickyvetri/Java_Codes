@@ -1,0 +1,62 @@
+package Looping;
+
+public class Example1 {
+
+public static void main(String[] args) {
+	Example1 obj = new Example1();
+	obj.print_V();
+	obj.print_I();
+	obj.print_C();
+	
+	
+}
+
+public void print_V(){
+  for(int row=1;row<=5;row++) {
+	  for(int col=1;col<=5;col++) {
+		  if((row==col) || (row+col==6)){
+			  if(row<=3) {
+			  System.out.print("* ");
+			  }
+		  }	  
+		  else {
+			  System.out.print("  ");
+		  }
+	  }
+	  System.out.println();
+ }
+}
+public void print_I() {
+	for(int row=1;row<=5;row++) {
+		  for(int col=1;col<=5;col++) {
+			  if((row==1 || row==5) || col==3){
+				  System.out.print("* ");
+			  }	  
+			  else {
+				  System.out.print("  ");
+			  }
+		  }
+		  System.out.println();
+	 }
+	System.out.println();
+}
+	public void print_C() {
+		for(int col=1;col<=5;col++) {
+			  for(int row=1;row<=5;row++) {
+				  if((col==1 || col==5) || row==1) {
+					  if(col==1) {
+					  System.out.print("  ");
+					  }
+					  else {
+						  System.out.print("* ");
+					  }
+					  }
+				  else {
+					  System.out.print("  ");
+				  }
+			  }
+			  System.out.println();
+		 }
+}
+}
+

@@ -1,0 +1,23 @@
+package Git;
+
+public class Fibonacci_Series {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fibonacci_Series obj = new Fibonacci_Series();
+		obj.Print();
+	}
+
+	private void Print() {
+		// TODO Auto-generated method stub
+		int first = 0 ,second = 1;
+		int third = 0;
+		while(third<=20) {
+			System.out.println(first);
+			third = first + second;
+			first = second;
+			second = third;
+		}
+	}
+
+}

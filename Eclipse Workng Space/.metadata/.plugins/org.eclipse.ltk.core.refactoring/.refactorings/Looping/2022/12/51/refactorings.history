@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;Looping.Array_programs.Concreate().sc&apos; in &apos;Looping.Array_programs.Concreate()&apos; to field&#x0A;- Original project: &apos;Looping&apos;&#x0A;- Original element: &apos;Looping.Array_programs.Concreate().sc&apos;&#x0A;- Field name: &apos;sc&apos;&#x0A;- Initialize field in method&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;sc&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;Looping{Array_programs.java" name="sc" selection="833 27" stamp="1670948472308" static="false" version="1.0" visibility="2"/>
+</session>

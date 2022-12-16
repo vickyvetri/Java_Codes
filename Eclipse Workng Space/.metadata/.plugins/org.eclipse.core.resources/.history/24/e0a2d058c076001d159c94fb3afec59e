@@ -1,0 +1,21 @@
+package Git;
+
+public class Fibonacci_Series_Without_Third_Variable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fibonacci_Series_Without_Third_Variable obj = new Fibonacci_Series_Without_Third_Variable();
+		obj.Print();
+	}
+
+	private void Print() {
+		// TODO Auto-generated method stub
+		int first = 0 ,second = 1;
+		while(first<13) {
+			System.out.println(first);
+			second = first + second;
+			first = second - second;
+		}
+	}
+
+}

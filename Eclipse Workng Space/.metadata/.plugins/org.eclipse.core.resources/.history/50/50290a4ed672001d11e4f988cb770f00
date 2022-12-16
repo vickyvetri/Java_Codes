@@ -1,0 +1,18 @@
+package Looping;
+
+public class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	obj.Print();
+}
+
+
+private void Print() {
+	for(int r=1;r<=7;r++){
+		for(int s=1;s<=7;s++){
+				System.out.print(" ");
+	}
+		System.out.println();
+	}
+	}
+}

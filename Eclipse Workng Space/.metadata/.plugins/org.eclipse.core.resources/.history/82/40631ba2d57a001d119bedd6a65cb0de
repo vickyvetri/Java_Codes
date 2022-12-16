@@ -1,0 +1,190 @@
+package Looping;
+
+//import java.util.Scanner;
+
+class Array_programs {
+public static void main(String[] args) {
+	Array_programs obj = new Array_programs();
+//	char[] name = {'v','i','c','k','y'};
+//	System.out.println("Enter the Value: ");
+//	Scanner sc = new Scanner(System.in);
+//	char a = sc.next().charAt(0);
+	int[] num = {13,43,86,56,98,46,75};
+	int[] num2 = {21,23,54,76,65};
+		//obj.Reverse_Number(name);
+		//obj.Linear_Search(a,name);
+		//obj.Replace_Char(a,name);
+		//obj.Biggest_value(num);
+		//obj.Reverse_Array(num);
+//		obj.Second_big(num);
+		//obj.Add_of_index_Value(num);
+		//obj.Add_OOD_Values(num);
+//		obj.Add_Two_Int_Array(num,num2);
+		//obj.Add_Two_Int_Array1(num,num2);
+	 	//obj.Concatination_of_String(num,num2);
+	int n[] = {10,4};
+	obj.Adjacent(n);
+		
+}
+
+private void Adjacent(int[] n) {
+	// TODO Auto-generated method stub	
+	int var = n[0]-n[n.length-1];
+	int array[] = new int[var+1];
+	int j = n[0];
+	
+	for(int i=0;i<=array.length-1;i++) {
+	 for(int val=var;val>=0;val--) {
+				 array[var] = j;
+				 j--;
+		 }
+	 }
+	for(int i=0;i<array.length;i++) {
+		System.out.print(array[i]+" ");
+	}
+}
+
+
+private void Concatination_of_String(int[] num, int[] num2) {
+	// TODO Auto-generated method stub
+	int a = num.length+num2.length;
+	int c[] = new int[a];
+	for(int i=0;i<=num.length-1;i++) {	
+		c[i]=num[i];
+		System.out.print(c[i]+" ");
+	}
+	int k = 0;
+	for(int j=num.length;j<=c.length-1;j++) {
+		c[j]=num2[k];
+		k++;
+		System.out.print(c[j]+" ");
+	}
+}
+
+
+private void Add_Two_Int_Array1(int[] num, int[] num2) {
+	// TODO Auto-generated method stub
+	int big = num.length>num2.length? num.length:num2.length;
+	int small = num.length<num2.length? num.length:num2.length;
+	int c[] = new int[big];
+	for(int i=0;i<small;i++) {
+		c[i] = num[i] + num2[i];
+		System.out.print(c[i]+" ");
+	}
+	for(int i=small;i<big;i++) {
+		c[i]=num[i];
+		System.out.print(c[i]+" ");
+	}
+}
+
+
+private void Add_Two_Int_Array(int[] num, int[] num2) {
+	// TODO Auto-generated method stub
+	int c[] = new int[num.length];
+	for(int i=0;i<=num.length-1;i++) {
+		c[i] = num[i] + num2[i];
+	}
+	for(int i=0;i<=num.length-1;i++) {
+		System.out.println(c[i]);
+	}
+}
+
+
+private void Add_OOD_Values(int[] num) {
+	// TODO Auto-generated method stub
+	int total = 0;
+	for(int i=0;i<=num.length-1;i+=1) {
+		if(num[i]%2!=0) {
+			total = total + num[i]; 
+		}
+	}
+	System.out.println(total);
+}
+
+
+private void Add_of_index_Value(int[] num) {
+	// TODO Auto-generated method stub
+	int total = 0;
+	for(int i=1;i<=num.length-1;i+=2) {
+		total = total+num[i];
+	}
+	System.out.println(total);
+}
+
+
+private void Second_big(int[] num) {
+	// TODO Auto-generated method stub
+	int big = Integer.MIN_VALUE;
+	int Sbig = Integer.MIN_VALUE;
+	for(int i=0;i<=num.length-1;i++) {
+		if(num[i]>big) {
+			Sbig = big;
+			big = num[i];
+		}
+		else if(num[i]>Sbig) {
+			Sbig=num[i];
+		}
+	}
+	System.out.println(Sbig);
+}
+
+
+private void Reverse_Array(int[] num) {
+	// TODO Auto-generated method stub
+	int a = num.length;
+	int[] Array = new int[a]; 
+	int l=0;
+	for(int i=num.length-1;i>=0;i--) {
+		Array[l]=num[i];
+		l++;
+	}
+	for(int i=0;i<=Array.length-1;i++) {
+		System.out.println(Array[i]);
+	}
+}
+
+
+private void Biggest_value(int[] num) {
+	// TODO Auto-generated method stub
+	int big=Integer.MAX_VALUE;
+	for(int i=0;i<=num.length-1;i++) {
+		if(num[i]<big) {
+			big = num[i];
+		}
+	}
+	System.out.println(big);
+}
+
+
+private void Replace_Char(char a, char[] name) {
+	// TODO Auto-generated method stub
+	int len = name.length;
+	name[len/2]=a;
+	for(int i=0;i<=name.length-1;i++) {
+		System.out.println(name[i]);
+	}
+}
+
+
+private void Linear_Search(char a, char[] name) {
+	// TODO Auto-generated method stub
+	int count = 0;
+	for(int i=name.length-1;i>=0;i--) {
+		if(name[i] == a) 
+		{
+		System.out.println("Yes,Available Posistion in "+(i+1));
+		count++;
+		}
+		}
+	//System.out.println(count);
+	}
+
+
+private void Reverse_Number(char[] name) {
+	// TODO Auto-generated method stub
+	for(int i=name.length-1;i>=0;i--) {
+	
+		System.out.println(name[i]);
+	}
+	}
+}

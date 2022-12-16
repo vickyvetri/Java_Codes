@@ -1,0 +1,40 @@
+package Looping;
+
+class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	obj.print();
+}
+
+private void print() {
+	for(int row=1;row<=7;row++) {
+		for(int col=1;col<=7;col++) {
+			if((row==4 || row==1) || (col==1 || col==7)) {
+			System.out.print("*");
+			}
+			else {
+			System.out.print(" ");	
+			}
+		}
+		System.out.println();
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

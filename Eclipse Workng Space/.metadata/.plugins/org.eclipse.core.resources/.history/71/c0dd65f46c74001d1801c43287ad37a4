@@ -1,0 +1,36 @@
+package Looping;
+
+class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	obj.print(300);
+}
+
+private void print(int no) {
+	int count = 0;
+	for(int div=2;div<=no/2;div++) {
+		if(no%div==0) {
+			System.out.print(div+" ");
+			count++;
+		}
+	}
+	System.out.println("count is "+count);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

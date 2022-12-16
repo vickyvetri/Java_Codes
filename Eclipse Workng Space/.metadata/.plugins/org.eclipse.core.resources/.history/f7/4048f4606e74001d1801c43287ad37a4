@@ -1,0 +1,36 @@
+package Looping;
+
+class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	obj.Prime_Number(100);
+}
+
+private void Prime_Number(int no) {
+	int count = 0;
+	for(int div=2;div<=no/2;div++) {
+		if(no%div==0) {
+			System.out.println(div+" ");
+			count++;
+		}
+	}
+	System.out.println("\nCount is "+count);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

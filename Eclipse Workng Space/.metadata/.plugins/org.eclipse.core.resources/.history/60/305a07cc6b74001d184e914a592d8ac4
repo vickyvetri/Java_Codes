@@ -1,0 +1,33 @@
+package Looping;
+
+class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	obj.print();
+}
+
+private void print() {
+	int sum = 1;
+	for(int n =1;n<=4;n++) {
+		sum = sum * n;
+	}
+	System.out.println(sum);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

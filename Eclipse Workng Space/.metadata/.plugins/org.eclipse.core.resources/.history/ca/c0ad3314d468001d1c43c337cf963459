@@ -1,0 +1,42 @@
+package Scenario4;
+
+public class TamilNadu extends SouthIndia{
+	static String capital = "Chennai";
+
+	public TamilNadu(String primeMinister) {
+		super(primeMinister);
+	}
+
+	@Override
+	void speakLanguage() {
+		System.out.println("Speking Tamil");		
+	}
+
+	@Override
+	void eat() {
+		System.out.println("Eating Idly");
+	}
+
+	@Override
+	void dress() {
+		System.out.println("wearing Traditional VestiDostis");
+	}
+	
+	public void cultivate() 
+	{
+		System.out.println("Rice and Sugar cane cultivation");
+	}
+	public void livingStyle() {
+		System.out.println("Above Average development");
+	}
+	public static void main(String[] args) {
+		System.out.println(India.capital);
+		System.out.println(TamilNadu.capital);
+		
+		SouthIndia si = new TamilNadu();
+		si.cultivate();
+		si.dress();
+		si.eat();
+		si.speakLanguage();		
+	}
+}

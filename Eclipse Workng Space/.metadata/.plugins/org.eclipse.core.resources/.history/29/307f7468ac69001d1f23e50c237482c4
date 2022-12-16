@@ -1,0 +1,23 @@
+package Looping;
+
+class Loop {
+
+	public static void main(String[] args) {
+		 
+		Loop obj = new Loop();
+		obj.Print();
+	}
+
+	void Print() {
+		int age = 65,age2 = 43;
+		if(age>age2) {
+			System.out.println("Age1");
+		}
+		else if(age2>age){
+			System.out.println("Age2");
+		}
+		else{
+			System.out.println("Ages are Same");
+		}
+	}
+} 

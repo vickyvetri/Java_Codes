@@ -1,0 +1,18 @@
+package Looping;
+
+public class Example1 {
+
+public static void main(String[] args) {
+	Example1 obj = new Example1();
+	obj.print();
+}
+
+public void print(){
+ int i = 1;
+ while(i<=5) {
+	 System.out.print("1 ");
+	 i++;
+ }
+}
+}
+

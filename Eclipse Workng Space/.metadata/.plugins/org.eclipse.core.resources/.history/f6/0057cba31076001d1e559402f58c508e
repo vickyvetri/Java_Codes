@@ -1,0 +1,22 @@
+package Looping;
+
+class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	char[] name = {'d','h','i','v','y','a','y'};
+		obj.find_biggest(name);
+}
+
+private void find_biggest(int[] name) {
+	// TODO Auto-generated method stub
+	
+	int big = 0; 
+	for(int i=0; i<ar.length; i++)
+	{
+	if(ar[i]>big)
+		big = ar[i];
+	}
+	System.out.println("Biggest is " + big);  
+	
+} 
+}

@@ -1,0 +1,22 @@
+package Looping;
+
+class Example2 {
+public static void main(String[] args) {
+	Example2 obj = new Example2();
+	char[] name = {'d','h','i','v','y','a','y'};
+		obj.linear_search(name);
+}
+
+private void linear_search(char[] name) {
+	// Linear Search
+	char ch = 'a'; 
+	for(int i=0; i<name.length;i++)
+	{
+		if(name[i] == ch)
+		{
+			System.out.println("Yes, present at position: "+ i);
+			break;
+		}
+	}
+} 
+}

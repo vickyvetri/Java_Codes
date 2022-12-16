@@ -1,0 +1,10 @@
+package Scenario4;
+
+public class SouthIndia extends India{
+
+	public SouthIndia(String primeMinister) {
+		super(primeMinister);
+		 
+	}
+
+}

@@ -1,0 +1,46 @@
+package Patterns;
+
+public class Patterns {
+
+	public static void main(String[]  args) {
+		// TODO Auto-generated method stub
+		Patterns obj = new Patterns();
+//		obj.pattern_1();
+//		obj.pattern_2();
+		obj.pattern_3();
+	}
+
+	private void pattern_3() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++) {
+			for(int col=5-row;col>0;col--) {
+				System.out.print("  ");
+			}
+			for(int s=1;s<=row;s++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern_2() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++) {
+			for(int col=1;col<=row;col++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern_1() {
+		// TODO Auto-generated method stub
+		for(int row=5;row>=1;row--) {
+			for(int col=1;col<=row;col++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
